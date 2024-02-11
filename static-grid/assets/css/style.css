@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+  width: 960px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  background-image: url("../img/grid.png");
+}
+
+header.primary,
+footer.primary {
+  width: 920px;
+  background-color: red;
+  opacity: 0.5;
+  margin: 20px;
+  padding: 20px;
+  float: left;
+}
+
+#blog {
+  background-color: green;
+  opacity: 0.3;
+  width: 544px;
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+aside {
+  background-color: blue;
+  opacity: 0.6;
+  width: 356px;
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+footer.primary {
+  text-align: center;
+  background-color: yellow;
+}

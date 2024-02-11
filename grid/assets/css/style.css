@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+  /* width: 960px; */
+  margin: 20px auto;
+  border: 1px solid #000;
+  /* background-image: url("../img/grid.png"); */
+}
+
+header.primary,
+footer.primary {
+  /* width: 920px; */
+  width: 95.833%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* margin:20px; */
+  margin: 2.0833%;
+  padding: 20px;
+  float: left;
+}
+
+#blog {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* width: 544px; */
+  width: 56.666%;
+  /* margin-left: 20px; */
+  margin-left: 2.0833%;
+  padding: 20px;
+  float: left;
+}
+
+aside {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* width: 356px; */
+  width: 37.0833%;
+  /* margin-left: 20px;*/
+  margin-left: 2.0833%;
+  padding: 20px;
+  float: left;
+}
+
+footer.primary {
+  text-align: center;
+  background-color: yellow;
+}

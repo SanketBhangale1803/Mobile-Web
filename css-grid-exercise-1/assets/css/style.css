@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+  /* width: 960px; */
+  width: 80vw;
+  margin: auto;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  /* grid gap is obsolete --> recommended to use gap */
+  padding: 20px;
+  /* background-image: url("../img/grid.png"); */
+}
+
+header.primary{
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;
+}
+
+footer.primary{
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-column: 1 / 6;
+  grid-row: 3 / 4;
+}
+
+#content{
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+#blog {
+  background-color: rgba(0, 0, 0, 0.3);
+  grid-column: 1 / 4;
+}
+
+aside {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-column: 4 / 6;
+}
+
+footer.primary {
+  text-align: center;
+  /* background-color: yellow; */
+}

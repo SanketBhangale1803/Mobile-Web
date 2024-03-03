@@ -1,0 +1,285 @@
+/* CSS Custom Properties */
+
+:root {
+  --main-bg-color: #A8A1A5;
+  --primary-type-color: #222222;
+  --accent-color-1: #999999;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ------ Typography -------*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------ Fluid Images -------*/
+img {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ------ Utility Classes  -------*/
+.container {
+  width: 420px; /* Design Time */
+  margin: 0 auto;
+  /* border: 1px solid #222222 */
+}
+
+/* ------ Helper Classes -------*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/* ------ Global Styles -------*/
+
+body {
+  /* background-image: linear-gradient(to bottom, rgba(239,83,83,0.5), rgba(113,222,236,0.75)); */
+  color: var(--primary-type-color);
+  line-height: 1.6;
+}
+a:link,
+a:visited {
+  color: var(--primary-type-color);
+}
+
+header.container{
+  background: var(--main-bg-color);
+  border: 1px solid black;
+  border-radius: 20px 20px 0 0;
+  border-bottom: none;
+  padding-bottom: 50px;
+}
+
+nav {
+  padding: 1px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 20px 0px 20px;
+  gap: 10px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:link,
+nav a:visited {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid #f06a6a;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  /* background: rgba(0, 0, 0, 0.95); */
+  transition: background-color 0.5s ease;
+  color: #000;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: rgba(207, 54, 54, 0.65);
+  color: white;
+}
+
+main {
+  padding: 1px 0px;
+}
+
+main.container{
+  border: 1px solid black;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
+}
+
+main h1 {
+  color:#dd651a ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-variant: small-caps;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main h1:before,
+main h1:after {
+  background-color: var(--accent-color-1);
+  content: "\a0";
+  flex-grow: 1;
+  height: 1px;
+  position: relative;
+  top: 1.6rem;
+}
+main h1:before {
+  margin-right: 5px;
+}
+main h1:after {
+  margin-left: 5px;
+}
+p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+dl {
+
+  display: grid;
+  /*shorthand*/
+  grid-template: repeat(8, auto) / 8em 1fr;
+  font-size: 0.9rem;
+}
+.resume-details{
+  background: var(--main-bg-color);
+  margin-bottom: 0;
+}
+dt {
+  font-weight: 800;
+  grid-column: 1;
+  padding: 10px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid var(--accent-color-1);
+}
+dd {
+  margin: 0;
+  grid-column: 2;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--accent-color-1);
+}
+
+.related-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.related-links a {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid #f06a6a;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  /* background: rgba(0, 0, 0, 0.95); */
+  transition: background-color 0.5s ease;
+  color: #000;
+  font-weight: 500;
+}
+
+.related-links .svg-inline--fa {
+  font-size: 1.8em;
+  padding-top: 7px;
+}
+
+.related-links a:hover {
+  background: rgba(207, 54, 54, 0.65);
+  color: white;
+}
+
+.related-links li {
+}
+#skills li {
+  list-style-type: square;
+}
+
+#experience h2{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.job,
+.certificate {
+  border-bottom: 1px solid var(--accent-color-1);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+#skills, #experience, #education{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#skills ul li{
+  color: #dd651a;
+}
+
+#experience h2{
+  padding: 0;
+}
+
+.job *[itemprop="jobTitle"],
+.job *[itemprop="name"],
+.job *[itemprop="url"],
+.job *[itemprop="addressLocality"],
+.certificate *[itemprop="name"] {
+  display: block;
+}
+
+.job h3 {
+  margin: 20px 0 0 0;
+  color: #dd651a;
+}
+
+#education h3{
+  color: #dd651a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.page-title {
+  grid-area: title;
+}
+#about {
+  grid-area: about;
+}
+#skills {
+  grid-area: skills;
+}
+#experience {
+  grid-area: experience;
+}
+#education {
+  grid-area: education;
+}
+
+main{
+  display:grid;
+  grid-template-areas:
+    "title"
+    "about"
+    "education"
+    "experience"
+    "skills"
+    ;
+}

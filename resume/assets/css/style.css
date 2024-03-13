@@ -31,7 +31,7 @@ img {
 
 /* ------ Utility Classes  -------*/
 .container {
-  width: 420px; /* Design Time */
+  width: 100%; /* Design Time */
   margin: 0 auto;
   /* border: 1px solid #222222 */
 }
@@ -293,4 +293,83 @@ main{
     "experience"
     "skills"
     ;
+}
+
+/* ------------Media Queries------------ */
+@media screen and (min-width: 768px) {
+  .container{
+    max-width:760px;
+  }
+  
+  main.container{
+    display:grid;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title  title title"
+      "about  about about"
+      "skills experience experience"
+      "...... education education";
+  }
+  
+  /*Nested Grid*/
+  
+  #about{
+    display:grid;
+    grid-template-columns: 250px 1fr auto;
+    gap:2em;
+    grid-template-areas:
+      "bio details details"
+      "related related related"
+  }
+  
+ .bio{
+  grid-area:bio;
+}
+.details{
+  grid-area:details;
+}
+.related-links{
+  grid-area:related;
+  border-bottom:1px solid #e0dada;
+  padding-bottom:50px;
+  justify-content: space-evenly;
+  } 
+
+.related-links a{
+  padding: 15px 30px 15px 30px;
+}
+  .resume-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 20px;
+  }
+  dd,dt{
+    padding-top: 40px;
+    font-size: 800;
+  }
+}
+
+@media screen and (min-width:992px) {
+  
+}
+
+
+/*----------------------Edge Cases-----------------------*/
+
+
+
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+  
+}
+
+@media only screen and (max-width: 395px) {
+.related-links{
+flex-direction:column;
+
+}
+.related-links a{
+display:block;
+  }  
 }

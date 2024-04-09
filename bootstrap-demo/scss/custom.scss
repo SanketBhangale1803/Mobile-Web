@@ -1,0 +1,137 @@
+@media screen and (max-width: 576px) {
+    .main-text {
+        font-size: 40px;
+    }
+    .profilepic{
+        display: flex;
+        justify-content: end;
+        margin-top: -350px;
+        margin-left: 50px;
+    }
+    .profilepic img{
+        width: 300px;
+        height: auto;
+    }
+    #contact-btn{
+        font-size: 20px;
+        width: 150px;
+        height: 40px;
+        background-color: #0d6efd;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        margin-left: -5px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        color:black;
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    .main-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .main-text {
+        font-size: 90px;
+        margin-right: 250px;
+    }
+
+    .profilepic img{
+        align-items: end;
+        width: 600px;
+        height: auto;
+    }
+    #contact-btn{
+        font-size: 30px;
+        width: 200px;
+        height: 60px;
+        background-color: #0d6efd;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+    }
+    .logo{
+        color:black;
+        font-size: 40px;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .name{
+        font-size: 30px;
+    }
+    .nvbr ul a{
+        font-size: 30px;
+    }
+    .main-text {
+        font-size: 70px;
+    }
+    .profilepic{
+        display: flex;
+        justify-content: end;
+        margin-top: -550px;
+    }
+    .profilepic img{
+        width: 450px;
+    }
+    #contact-btn{
+        font-size: 30px;
+        width: 200px;
+        height: 60px;
+        background-color: #0d6efd;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        color:black;
+        font-size: 80px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .name{
+        font-size: 30px;
+    }
+    .nvbr ul a{
+        font-size: 30px;
+    }
+    .main-text {
+        font-size: 70px;
+    }
+    .profilepic{
+        display: flex;
+        justify-content: end;
+        margin-top: -650px;
+    }
+    .profilepic img{
+        width: 650px;
+    }
+    #contact-btn{
+        font-size: 30px;
+        width: 200px;
+        height: 60px;
+        background-color: #0d6efd;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        color:black;
+        font-size: 80px;
+        text-decoration: none;
+    }
+}

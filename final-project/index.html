@@ -103,17 +103,28 @@
 
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="assets/img/about.jpg" alt="" />
+
+            <!-- ==== responsive image ==== -->
+            <img
+              sizes="(max-width: 768px) 100vw, 768px"
+              srcset="
+                assets/img/about_ncqrs2_c_scale,w_200.jpg 200w,
+                assets/img/about_ncqrs2_c_scale,w_455.jpg 455w,
+                assets/img/about_ncqrs2_c_scale,w_639.jpg 639w,
+                assets/img/about_ncqrs2_c_scale,w_768.jpg 768w
+              "
+              src="assets/img/about.jpg"
+              alt=""
+            />
           </div>
 
           <div>
             <p class="about__text">
-              Greetings, I'm an enthusiastic college
-              student with an immense passion for the dynamic field of
-              Artificial Intelligence. Currently pursuing my undergraduate
-              degree in Computer Science at the University of Arkansas at Little
-              Rock, I bring a global perspective having completed my high school
-              education in India.
+              Greetings, I'm an enthusiastic college student with an immense
+              passion for the dynamic field of Artificial Intelligence.
+              Currently pursuing my undergraduate degree in Computer Science at
+              the University of Arkansas at Little Rock, I bring a global
+              perspective having completed my high school education in India.
             </p>
           </div>
         </div>
@@ -167,7 +178,7 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
-                <i class='bx bxl-c-plus-plus skills__icon'></i>
+                <i class="bx bxl-c-plus-plus skills__icon"></i>
                 <span class="skills__name">C++</span>
               </div>
               <div class="skills__bar skills__cpp"></div>
@@ -177,7 +188,7 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
-                <i class='bx bxl-java skills__icon' ></i>
+                <i class="bx bxl-java skills__icon"></i>
                 <span class="skills__name">Java</span>
               </div>
               <div class="skills__bar skills__java"></div>
@@ -195,15 +206,25 @@
       <!--===== WORK =====-->
       <section class="work section" id="work">
         <h2 class="section-title">Work</h2>
-          <p class="work__text">Click on the picture to go to that project</p>
+        <p class="work__text">Click on the picture to go to that project</p>
         <div class="work__container bd-grid">
-          <a href="https://sanketbhangale1803.github.io/ifsc-1310/Dragon%20Project%20Final%20Draft/index.html" target="_blank" class="work__img">
+          <a
+            href="https://sanketbhangale1803.github.io/ifsc-1310/Dragon%20Project%20Final%20Draft/index.html"
+            target="_blank"
+            class="work__img"
+          >
             <img src="assets/img/spacex.jpeg" alt="spacex project" />
           </a>
-          <a href="https://github.com/SanketBhangale1803/Pinterest-Clone" class="work__img">
+          <a
+            href="https://github.com/SanketBhangale1803/Pinterest-Clone"
+            class="work__img"
+          >
             <img src="assets/img/pinterest.jpeg" alt="pinterest project" />
           </a>
-          <a href="https://github.com/CPSC-2376-Programming-II-UALR/final-group-assignment-all-stars_olwan_bhangale" class="work__img">
+          <a
+            href="https://github.com/CPSC-2376-Programming-II-UALR/final-group-assignment-all-stars_olwan_bhangale"
+            class="work__img"
+          >
             <img src="assets/img/mario.jpg" alt="super mario bros project" />
           </a>
         </div>
@@ -214,7 +235,43 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <div id="wufoo-zjzyf6t0xc2llt"> Fill out my <a href="https://sanketbhangale.wufoo.com/forms/zjzyf6t0xc2llt">online form</a>. </div> <script type="text/javascript"> var zjzyf6t0xc2llt; (function(d, t) { var s = d.createElement(t), options = { 'userName':'sanketbhangale', 'formHash':'zjzyf6t0xc2llt', 'autoResize':true, 'height':'768', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zjzyf6t0xc2llt = new WufooForm(); zjzyf6t0xc2llt.initialize(options); zjzyf6t0xc2llt.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+          <div id="wufoo-zjzyf6t0xc2llt">
+            Fill out my
+            <a href="https://sanketbhangale.wufoo.com/forms/zjzyf6t0xc2llt"
+              >online form</a
+            >.
+          </div>
+          <script type="text/javascript">
+            var zjzyf6t0xc2llt;
+            (function (d, t) {
+              var s = d.createElement(t),
+                options = {
+                  userName: "sanketbhangale",
+                  formHash: "zjzyf6t0xc2llt",
+                  autoResize: true,
+                  height: "768",
+                  async: true,
+                  host: "wufoo.com",
+                  header: "show",
+                  ssl: true,
+                };
+              s.src =
+                ("https:" == d.location.protocol ? "https://" : "http://") +
+                "secure.wufoo.com/scripts/embed/form.js";
+              s.onload = s.onreadystatechange = function () {
+                var rs = this.readyState;
+                if (rs) if (rs != "complete") if (rs != "loaded") return;
+                try {
+                  zjzyf6t0xc2llt = new WufooForm();
+                  zjzyf6t0xc2llt.initialize(options);
+                  zjzyf6t0xc2llt.display();
+                } catch (e) {}
+              };
+              var scr = d.getElementsByTagName(t)[0],
+                par = scr.parentNode;
+              par.insertBefore(s, scr);
+            })(document, "script");
+          </script>
         </div>
       </section>
     </main>

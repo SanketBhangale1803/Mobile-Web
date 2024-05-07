@@ -311,6 +311,12 @@ img {
 .skills__node {
   width: 85%;
 }
+.skills__cpp {
+  width: 75%;
+}
+.skills__java{
+  width: 80%;
+}
 .skills__img {
   border-radius: 0.5rem;
 }
@@ -325,30 +331,21 @@ img {
     overflow: hidden;
   }
   .work__img img {
+    height: 230px;
+    width: 100%;
     transition: 1s;
   }
   .work__img img:hover {
     transform: scale(1.1);
   }
 
-  .contact__input {
-    width: 100%;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-semi);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1.5px solid var(--second-color);
-    outline: none;
-    margin-bottom: var(--mb-4);
+  .work__text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+    color: var(--second-color);
   }
-  .contact__button {
-    display: block;
-    border: none;
-    outline: none;
-    font-size: var(--normal-font-size);
-    cursor: pointer;
-    margin-left: auto;
-  }
+
   .footer {
     background-color: var(--second-color);
     color: #fff;
@@ -373,7 +370,7 @@ img {
   }
   
   /* ===== MEDIA QUERIES=====*/
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 400px) {
     .home {
       row-gap: 2rem;
     }
